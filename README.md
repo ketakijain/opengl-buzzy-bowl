@@ -16,11 +16,13 @@ This is implemented in the form of a multithreaded application. Each UAV has a t
 MOTION:  
 The initial motion towards the centre point is defined by kinematic equations for each UAV, the final position being the same.  
 The logic for motion along the surface of the sphere is as follows:  
-First, each UAV chooses a random point generated on the surface of a sphere, using a normal distribution to choose theta and phi. The point is then described parametrically using equation of sphere:  
-x= r*sinϕcosθ  
-y=r*sinϕsinθ  
+First, each UAV chooses a random point on the surface of a sphere, generated using a normal distribution to randomly choose theta and phi. The point is then described parametrically using equation of sphere:  
+x= r* sinϕcosθ  
+y= r* sinϕsinθ  
 z=r*cosϕ  
-where r is the radius of the sphere
+where r is the radius of the sphere  
+
+Next, two sets of normal vectors are generated, and using two cross-products, a move is made  in a direction tangential to the sphere.
 
 
 
