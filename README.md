@@ -17,7 +17,10 @@ MOTION:
 The initial motion towards the centre point is defined by kinematic equations for each UAV, the final position being the same.  
 The logic for motion along the surface of the sphere is as follows:  
 First, each UAV chooses a random point generated on the surface of a sphere, using a normal distribution to choose theta and phi. The point is then described parametrically using equation of sphere:  
-![image](https://user-images.githubusercontent.com/60465157/147621632-5a275082-aaf0-400c-b1f7-8f6994d3c349.png)
+x= r*sinϕcosθ  
+y=r*sinϕsinθ  
+z=r*cosϕ  
+where r is the radius of the sphere
 
 
 
